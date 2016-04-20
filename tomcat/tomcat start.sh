@@ -1,0 +1,1 @@
+/usr/local/Cellar/tomcat/8.0.30/libexec/bin/startup.sh start
