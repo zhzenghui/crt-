@@ -1,8 +1,9 @@
 {\rtf1\ansi\ansicpg936\cocoartf1348\cocoasubrtf170
-{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fswiss\fcharset0 ArialMT;}
-{\colortbl;\red255\green255\blue255;\red255\green39\blue18;\red14\green14\blue14;\red255\green255\blue255;
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 HelveticaNeue;\f2\fswiss\fcharset0 ArialMT;
 }
-\paperw11900\paperh16840\margl1440\margr1440\vieww18600\viewh15400\viewkind0
+{\colortbl;\red255\green255\blue255;\red255\green39\blue18;\red22\green22\blue22;\red255\green255\blue255;
+\red14\green14\blue14;\red22\green22\blue22;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14400\viewh16100\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 
 \f0\fs28 \cf0 \
@@ -12,7 +13,7 @@ view controller  \'a1\'aa view \
     |\
 model(YYModel)  <\'a1\'aa>  json   \
     |\
-  db(Realm)                            \
+  db(sql)                            \
 \
 \
 2. \'cd\'f8\'c2\'e7\'b2\'bf\'b7\'d6\'a3\'ba\
@@ -34,27 +35,164 @@ model(YYModel)  <\'a1\'aa>  json   \
 \
 5. \'cf\'ee\'c4\'bf\'ce\'c4\'bc\'fe\'bd\'e1\'b9\'b9\
 \
+\
+\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 \cf0 6. \'bd\'e7\'c3\'e6\'c1\'f7\'b3\'a9\'d3\'c5\'bb\'af\
 \'bd\'e8\'d6\'fa\'c1\'cbAsyncDisplayKit  \'c0\'b4\'bd\'f8\'d0\'d0\'c1\'cb\'bd\'e7\'c3\'e6\'d3\'c5\'bb\'af\
 \
 \
 7. \'b1\'be\'b5\'d8\'ca\'fd\'be\'dd\'bf\'e2\'b5\'c4\'c9\'fd\'bc\'b6\'b7\'bd\'b0\'b8\
+\'d2\'bb\'b8\'f6\'c0\'e0\'cb\'c6rails\'cc\'ed\'bc\'d3\'d0\'c2\'c4\'a3\'d0\'cd\'b5\'c4\'b7\'bd\'ca\'bd\'a1\'a3 \
 \
-8. \
+8. \'c9\'e8\'d6\'c3\'b2\'bf\'b7\'d6\'b5\'c4\'ce\'c4\'bc\'fe\'ba\'cd\'b4\'fa\'c2\'eb\'bd\'e1\'ba\'cf\'a1\'a3\
+\'d3\'c9settings.plist\'a3\'acSettingItem\'ba\'cdSetting\'c0\'b4\'bf\'d8\'d6\'c6\'c9\'e8\'d6\'c3\'bd\'e7\'c3\'e6\
+\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 \cf0 \
-\
-\
-\
-runloop \'b5\'c4\'d4\'ad\'c0\'ed\
+9. runloop \'b5\'c4\'d4\'ad\'c0\'ed\
 \'cf\'df\'b3\'cc\'b9\'d8\'cf\'b5\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \'b6\'d4\'cd\'e2\'bd\'d3\'bf\'da\
+	1. Ref\
+	2. ModeRef\
+	3. SourceRef\
+	4. TimerRef\
+	5. ObServer\
 \
-xcode   \'b5\'c4\'cf\'ee\'c4\'bf\'c4\'a3\'b0\'e5\
+\
+10. \'c4\'a3\'d0\'cd\'c0\'e0\
+\'c4\'a3\'d0\'cd\'c0\'e0\'d6\'b1\'bd\'d3\'ca\'b9\'d3\'c3\'c1\'cbESJSONFormat \'c0\'b4\'d7\'aa\'bb\'af\
+\
+11. \'ba\'f3\'cc\'a8\'cd\'c6\'cb\'cd\'d3\'eb\'ba\'f3\'cc\'a8\'b2\'a5\'b7\'c5\
+\
+12. \'d3\'a6\'d3\'c3\'b0\'b2\'c8\'ab\
+\
+\
+\
+
+\b\fs48 ModeItem \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0\fs28 \cf0 \
+1. 
+\f1\fs32 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 CFRunLoopModeRef 
+\f0 \'c0\'e0\'b2\'a2\'c3\'bb\'d3\'d0\'b6\'d4\'cd\'e2\'b1\'a9\'c2\'b6
+\fs28 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+2. 
+\f1\b\fs32 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 CFRunLoopSourceRef
+\b0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  
+\f0 \'ca\'c7\'ca\'c2\'bc\'fe\'b2\'fa\'c9\'fa\'b5\'c4\'b5\'d8\'b7\'bd\'a1\'a3source0\'a3\'ac source1   \
+	source0 \'d6\'bb\'b0\'fc\'ba\'ac\'d2\'bb\'b8\'f6\'bb\'d8\'b5\'f7\'a1\'a3  \'b2\'bb\'c4\'dc\'d6\'f7\'b6\'af\'b3\'f6\'b7\'a2\'ca\'c2\'bc\'fe\'a1\'a3  \
+	\'d0\'e8\'d2\'aa\'b5\'f7\'d3\'c3
+\f1 CFRunLoopSourceSignal(source)
+\f0 \'a3\'ac\'b1\'ea\'bc\'c7\'ce\'aa\'b4\'fd\'b4\'a6\'c0\'ed\'a1\'a3
+\f1  \
+
+\f0 	\'ca\'d6\'b6\'af\'b5\'f7\'d3\'c3
+\f1 CFRunLoopWakeUp(runloop) 
+\f0 \'a1\'a3 \
+\
+	source1 \'b0\'fc\'ba\'ac\'d2\'bb\'b8\'f6 mach_port \'ba\'cd\'d2\'bb\'b8\'f6\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd\'d6\'b8\'d5\'eb\'a1\'a3 \
+	\'cd\'a8\'b9\'fd\'c4\'da\'ba\'cb\'ba\'cd\'c6\'e4\'cb\'fb\'cf\'df\'b3\'cc\'cf\'e0\'bb\'a5\'b7\'a2\'cb\'cd\'d0\'c5\'cf\'a2\'a1\'a3 \
+\
+3. CFRunLoopTimerRef \'bb\'f9\'d3\'da\'ca\'b1\'bc\'e4\'b5\'c4\'b4\'a5\'b7\'a2\'c6\'f7\'a1\'a3 
+\fs28 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+\
+4. CFRunLoopObserverRef \'ca\'c7\'b9\'db\'b2\'ec\'d5\'df\'a1\'a3 \'c3\'bf\'b8\'f6Observer\'b0\'fc\'ba\'ac\'d2\'bb\'b8\'f6\'bb\'d8\'b5\'f7\'a1\'a3 \
+\
+\
+mode item  \'c9\'cf\'c3\'e6Source\'a1\'a2timer\'a1\'a2observer \'a1\'a3 \
+\'d2\'bb\'b8\'f6item\'bf\'c9\'d2\'d4\'b1\'bb\'cd\'ac\'ca\'b1\'bc\'d3\'c8\'eb\'b5\'bd\'b6\'e0\'b8\'f6mode\'a1\'a3 \
+\'d2\'bb\'b8\'f6item\'d6\'d8\'b8\'b4\'bc\'d3\'c8\'eb\'cd\'ac\'d2\'bb\'b8\'f6mode \'b2\'bb\'bb\'e1\'d3\'d0\'d0\'a7\'b9\'fb\'a1\'a3 \
+\'d2\'bb\'b8\'f6mode\'d6\'d0\'d2\'bb\'b8\'f6item\'b6\'bc\'c3\'bb\'d3\'d0\'a1\'a3 \'d4\'f2runloop\'bb\'e1\'d6\'b1\'bd\'d3\'cd\'cb\'b3\'f6\'a1\'a3 \
+\
+
+\fs48 Mode\
+
+\fs28 CFRunloopMode \'ba\'cd CFRunLoop\
+	runloopMode \
+		SetRef sources0;\
+		SetRef sources1;\
+		ArrayRef observers;\
+		ArrayRef timers;\
+\
+	runloop\
+		SetRef commonModes; \
+		SetRef commonModeItems;\
+		RunloopModeRef currentMode;\
+		SetRef  modes;\
+\
+commonModes  \'d2\'bb\'b8\'f6mode\'bf\'c9\'d2\'d4\'bd\'ab\'d7\'d4\'bc\'ba\'b1\'ea\'bc\'c7\'ce\'aa\'a1\'b0common\'a1\'b1 \'ca\'f4\'d0\'d4 \'a1\'a3\'bd\'abcodename\'bc\'d3\'c8\'eb\'b5\'bd runloop\'b5\'c4commonModes\'d6\'d0\'a1\'a3 \
+\'b5\'b1runloop\'c4\'da\'c8\'dd\'b7\'a2\'c9\'fa\'b1\'e4\'bb\'af\'a3\'ac Runloop\'d7\'d4\'b6\'af\'bd\'abcommonmodeitems S/O/T\'cd\'ac\'b2\'bd\'b5\'bd \'be\'df\'d3\'d0\'a1\'b0common\'b1\'ea\'bc\'c7\'b5\'c4\'cb\'f9\'d3\'d0mode\'a1\'a3\
+\
+\'be\'d9\'c0\'fd\'a3\'ba\
+	1. DefaultMode\
+	2. Tracking Mode\
+	3. 
+\fs48 \
+
+\fs28 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+10. xcode   \'b5\'c4\'cf\'ee\'c4\'bf\'c4\'a3\'b0\'e5\
 \pard\pardeftab720\sl500\sa600
 
-\f1\i\fs40 \cf3 \cb4 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec3 ~/Library/Developer/Xcode/Templates
+\f2\i\fs40 \cf5 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 ~/Library/Developer/Xcode/Templates
 \i0 \expnd0\expndtw0\kerning0
 \outl0\strokewidth0 .\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs36 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \'c4\'da\'c8\'dd\'d7\'dc\'bd\'e1\
+\
+FFMpeg\
+\'bd\'e7\'c3\'e6\'c1\'f7\'b3\'a9\'d3\'c5\'bb\'af\
+\pard\pardeftab720\sl544
+
+\f1\fs32 \cf6 \expnd0\expndtw0\kerning0
+RunLoop\
+mvvm\
+jspatch\
+webview js\
+
+\f0 \'c9\'fa\'c3\'fc\'d6\'dc\'c6\'da
+\f1 \
+gcd block 
+\f0 \'b9\'d8\'bc\'fc\'d6\'aa\'ca\'b6\'b5\'e3\
+AOP\
+\
+block copy\
+\'b7\'bd\'b7\'a8 \'c4\'da\'b2\'bf\'b5\'c4block\'d4\'da\'d5\'bb\'c7\'f8\'a3\'ac \'ca\'b9\'d3\'c3copy\'bf\'c9\'d2\'d4\'b0\'d1\'cb\'fc\'b7\'c5\'b5\'bd\'b6\'d1\'c7\'f8\'a1\'a3\
+\
+@property (copy) void (^blockProperty)(void);
+\f2\fs40 \cf5 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 \
 }
