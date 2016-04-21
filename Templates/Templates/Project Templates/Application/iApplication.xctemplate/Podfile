@@ -1,0 +1,49 @@
+#source 'https://gitcafe.com/akuandev/Specs.git' #注意这里，改成自己的或者删除掉
+platform :ios, '7.0'
+
+inhibit_all_warnings!
+
+pod 'AFNetworking'
+
+pod 'SVProgressHUD'
+
+pod 'MJRefresh'
+
+pod 'Masonry'
+
+pod 'YTKKeyValueStore'
+
+pod 'YYCache'
+
+pod 'YYText'
+
+pod 'Fabric'
+
+pod 'Crashlytics'
+
+pod 'UMengAnalytics'
+
+pod 'SCRecorder'
+
+pod 'YTKNetwork'
+
+pod 'Toast', '~> 3.0'
+
+pod 'DZNEmptyDataSet'
+
+pod 'YYModel'
+
+pod 'TDBadgedCell'
+
+pod 'Aspects'
+
+pod 'AFMInfoBanner', :git => "https://github.com/zhzenghui/AFMInfoBanner.git"
+
+# 版本变更
+pod "MTMigration"
+
+pod 'FDFullscreenPopGesture', '1.1'
+
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.4'
+
+
